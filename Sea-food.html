@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branzino or European bass</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
+    img{
+        height: 250px;
+        }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+        font-size: large;
+        font-weight: 700;
+        
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        margin-top: 80px;
+    }
+    ol {
+        color: rgb(0, 0, 0);
+        font-weight: 400; 
+        font-size: 18px;
+    }
+    ul{
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Branzino or European bass:</h1>
+            <p id="descibe"> Seafood includes any form of food taken from the sea. Seafood is an important source of (animal) protein in many diets around the world, especially in coastal areas. Semi-vegetarians who consume seafood as the only source of meat are said to adhere to pescetarianismmost nontoxic aquatic species are exploited for food by humans. Even those with toxic properties, such as certain blowfish, can be prepared so as to circumvent harm to the consumer 
+                
+            
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <li>Whole branzino or striped bass, scaled and gutted</li>
+            <li>Unsalted butter</li>
+            <li>Capers</li>
+            <li>Lemon juice</li>
+            <li>Parsley leaves</li>
+            <li>Salt</li>
+            <li>Rosemary Sprigs</li>
+            
+
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>Preheat oven to 425°F. In a medium bowl, mix butter with capers, lemon juice, and parsley; season with salt to taste. Hold at room temperature.</li>
+    <Li>Season branzino cavities with salt to taste and stuff two lemon rounds and one rosemary sprig in each. Season outside of fish with salt to taste</Li>
+    <Li>In a large, nonstick skillet, heat 2 tablespoons olive oil until shimmering. Add two branzino and cook over high heat until skin is browned and crisp, flipping once, about 3 minutes per side.</Li>
+    <Li>Transfer fish to a large rimmed baking sheet. Repeat with remaining 1 tablespoon olive oil and two stuffed branzino. Roast fish in the oven for about 10 minutes, until just cooked through.</Li>
+    <li>Serve whole or filleted, passing caper butter at the table</li>
+</ul>
+
+            </div>
+            <div>
+        <img src="fish.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+               
+                const commentItem = document.createElement('li');
+                commentItem.textContent = newComment;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function () {
+                    commentList.removeChild(commentItem);
+                });
+
+                commentItem.appendChild(deleteButton);
+
+               
+                commentList.appendChild(commentItem);
+
+                
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>

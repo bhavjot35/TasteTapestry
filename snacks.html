@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+    }
+    .image_align {
+    display: flex;
+    
+   
+    border: 1px solid black;
+    
+}
+
+
+
+
+.image-container  {
+  padding: 30px;
+    
+ 
+}
+/* div .container{
+    display: flex;
+} */
+
+.sid_img{
+    display: flex;
+    
+    
+    
+}
+.image_align{
+    display: flex;
+    flex-direction: column;
+    background-image:url(imgbaack.avif);
+    background-repeat: no-repeat;
+background-size: 100%;
+
+    
+}
+.align2{
+    display: flex; 
+    margin-top: 59px;
+    justify-content: space-evenly;
+
+}
+.imgname{
+    text-align: center;
+    font-size: larger;
+   font-weight: 600;
+}
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 215px;
+    height:150px;
+    display: block;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height:150px ;
+    width: 215px;
+    
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    padding: 20px; 
+}
+
+.image-container:hover .overlay {
+    opacity: 0.7;
+}
+
+.overlay-text {
+    color: rgb(255, 255, 255);
+    font-size: 10PX;
+    font-weight: 400;
+}
+.overlay-text:HOVER{
+    color: rgb(0, 242, 255);
+}
+#headd{
+   margin-top:-150px;
+   margin-left: 600px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <h1 id="headd">Snacks</h1>
+    </div>
+    <div class="image_align">
+        <div class="align2">
+        <div class="image-container">
+            <a href="pizzaa.html" target="_blank">
+                <img src="pizzaa.jpg">
+               
+                <div class="overlay">
+                    <p class="overlay-text"><I>CLICK HERE TO VIEW RECIPE</I></p>
+                
+                </a>
+            </div>
+            <p class="imgname"><B>Pizza</B></p>
+        </div>
+        <div class="image-container">
+            <a href="sandwitch.html" target="_blank">
+                <img src="sandwitch.jpg">
+          
+            <div class="overlay">
+                <p class="overlay-text"><I>CLICK HERE TO VIEW RECIPE</I></p>
+            </a>
+            </div>
+            <p class="imgname"><B>Sandwitch</B></p>
+        </div>
+        <div class="image-container">
+            <a href="dumpling.html" target="_blank">
+                <img src="momos.jpg">
+          
+            <div class="overlay">
+                <p class="overlay-text"><I>CLICK HERE TO VIEW RECIPE</I></p>
+            </a>
+            </div>
+            <p class="imgname"><B>Dumplings</B></p>
+        </div>
+        <div class="image-container">
+            <a href="hotdog.html" target="_blank">
+                <img src="Hot_dog.jpg">
+          
+            <div class="overlay">
+                <p class="overlay-text"><I>CLICK HERE TO VIEW RECIPE</I></p>
+            </a>
+            </div>
+            <p class="imgname"><B>Hot Dog</B></p>
+        </div>
+        <div class="image-container">
+            <a href="cupcake.html" target="_blank">
+                <img src="cupcake.jpg">
+          
+            <div class="overlay">
+                <p class="overlay-text"><I>CLICK HERE TO VIEW RECIPE</I></p>
+            </a>
+            </div>
+            <p class="imgname"><B>Cupcake</B></p>
+        </div>
+    
+</body>
+</html>

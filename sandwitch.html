@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    .section img{
+        height: 250px;
+       
+    }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+    }
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Sandwich:</h1>
+            <p id="descibe">sandwich, in its basic form, slices of meat, cheese, or other food placed between two slices of bread. Although this mode of consumption must be as old as meat and bread, the name was adopted only in the 18th century for John Montagu, 4th earl of Sandwich. According to an often-cited account from a contemporary French travel book, Sandwich had sliced meat and bread brought to him at the gaming table on one occasion so that he could continue to play as he ate; it seems more likely, however, that he ate these sandwiches as he worked at his desk or that the world became aware of them when he requested them in London society. His title lent the preparation cachet, and soon it was fashionable to serve sandwiches on the European continent, and the word was incorporated into the French language. Since that time the sandwich has been incorporated into virtually every cuisine of the West by virtue of its simplicity of preparation, portability, and endless variety.
+
+                
+            
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <Li>Bread slices</Li>
+            <Li>Cheese slices or cheese sliced from a block</Li>
+            <Li>Mayonnaise sauce</Li>
+            <Li>to taste Salt</Li>
+            <li>to taste Black pepper</li>
+            <li>Mustard</li>
+           <li>Lettuce leaves </li>
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>Mix mayonnaise, salt, pepper and mustard.</li>
+    <Li>Spread a layer of this mixture on to two slices of bread.</Li>
+    <Li>Place a lettuce leaf on one of the slices (on the mayonnaise side) and cover with cheese.</Li>
+    <Li>Place the second slice mayonnaise side down to cover the cheese</Li>
+    <li>Cut the crusts, if you so desire and serve.</li>
+    
+</ul>
+
+            </div>
+            <div>
+        <img src="sandwitch.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+               
+                const commentItem = document.createElement('li');
+                commentItem.textContent = newComment;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function () {
+                    commentList.removeChild(commentItem);
+                });
+
+                commentItem.appendChild(deleteButton);
+
+                
+                commentList.appendChild(commentItem);
+
+                
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffles</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
+    img{
+        height: 250px;
+        }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+        font-size: large;
+        font-weight: 700;
+        
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        margin-top: 80px;
+    }
+    ol {
+        color: rgb(0, 0, 0);
+        font-weight: 400; 
+        font-size: 18px;
+    }
+    ul{
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Waffles:</h1>
+            <p id="descibe">waffle, crisp raised cake baked in a waffle iron, a hinged metal griddle with a honeycombed or fancifully engraved surface that allows a thin layer of batter to cook evenly and crisply. Baking powder is the typical leavening in American waffles, and yeast waffles are eaten in Belgium and France.
+
+                
+            
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <li>Eggs</li>
+            <li>Flour</li>
+            <li>Milk</li>
+            <li>Oil</li>
+            <li>Sugar</li>
+            <li>Baking Powder</li>
+            <li>Salt</li>
+            <li>Vanilla</li>
+
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li> Make the batter: Whisk the eggs, then add the flour, milk, and oil. Whisk in the sugar. Stir in the remaining ingredients</li>
+    <Li>Make the waffles: Pour the batter onto the hot, prepared waffle iron. Cook until golden brown and repeat with the remaining batter.</Li>
+    <Li>For the most traditional experience, top each waffle with butter and maple syrup. But that's not the only way to enjoy this top-rated recipe</Li>
+    
+</ul>
+
+            </div>
+            <div>
+        <img src="waffles.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+                
+                const commentItem = document.createElement('li');
+                commentItem.textContent = newComment;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function () {
+                    commentList.removeChild(commentItem);
+                });
+
+                commentItem.appendChild(deleteButton);
+
+                
+                commentList.appendChild(commentItem);
+
+               
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>
