@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barfi</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(237, 228, 228);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: white;
+    margin-bottom: 100px;
+}
+    
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
+    img{
+        height: 250px;
+        }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+        font-size: large;
+        font-weight: 700;
+        
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        margin-top: 80px;
+    }
+    ol {
+        color: rgb(0, 0, 0);
+        font-weight: 400; 
+        font-size: 18px;
+    }
+    ul{
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+
+</style>
+
+
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Barfi:</h1>
+            <p id="describe">This favourite sweet, also known as Indian cheesecake, has a faint cheese scent and shares a close appearance. However, while it may resemble cheese or have a faint odour similar to cheesecake, it does not taste like it. Besan barfi is another popular type of this sweet. As the name suggests, it is prepared with besan or chickpea flour. The pistachio nut is added to the Pista barfi. Edges are frequently rolled in groundnut, and whole pieces of nut can be added. Similarly, cashews are used in the preparation of kaju barfi.
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <Li>300 mililitre condensed milk</Li>
+            <Li>2 and 1/2 cup milk powder</Li>
+            <Li>2 tablespoon ghee</Li>
+            <Li>1 cup water</Li>
+            <li>1 teaspoon green cardamom</li>
+            <li>  handful pistachios</li>
+           
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>Take a large bowl and add milk powder to it along with milk. Make a rigid dough using these ingredients. Once done, keep the dough in the freezer and freeze it for at least for 20 minutes.</li>
+    <Li> Take the dough and grate it in a bowl. Keep this grated dough aside for further usage. Take a deep bottomed pan, keep it on low flame and heat ghee in it.<Li>
+    <Li>Add the grated dough to this pan with water. Mix well and stir in cardamom powder in the pan. Cook this mixture until the water dries out and the mixture accumulates in the centre of the pan</Li>
+    <Li>Pour this prepared mixture into a greased tray and garnish it with almonds and pistachios. Let the mixture cool down and cut the barfi into desired shapes. Garnish it with silver varq and serve!</Li>
+    
+</ul>
+<h2>Tips:</h2>
+<ul>
+    <li>You can also use evaporated milk instead of condensed milk.</li>
+    <li>You can skip the silver varq if you like.</li>
+    <li>Do not overcook the barfi mixture as it will turn chewy.</li>
+    <li>You can store the barfis in an airtight container</li>
+</ul>
+
+
+            </div>
+            <div>
+        <img src="barfi.jpeg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments:</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    
+    
+    <!-- <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+                
+                const commentBox = document.createElement('div');
+                commentBox.classList.add('comment-box');
+                commentBox.textContent = newComment;
+
+                
+              
+
+                
+                commentInput.value = '';
+            });
+        });
+    </script> -->
+    
+</body>
+</html>
