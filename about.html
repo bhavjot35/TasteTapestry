@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us -TASTE TREASURY</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #6e5488;
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e266d6;
+            color: #333;
+        }
+
+        header {
+            background-color: #8958d7;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease-in;
+        }
+        nav ul li a:hover {
+           font-size: 1.2em;
+           color: burlywood;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            background: linear-gradient(135deg, #1c1c1c, #000000);
+            margin-top: 20px;
+            color: white;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .more-info {
+            text-align: left;
+            font-family: cursive;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .more-info * {
+            margin: 8px;
+        }
+
+        .team-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 25px;
+            margin: 40px;
+            font-weight: lighter;
+        }
+
+        .teamMembersContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+            width: 20%;
+        }
+
+        .profilePic {
+            width: 150px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-size: cover;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .profilePic:hover {
+            width: 200px;
+        }
+
+        .teamMembersContainer .team-member:nth-child(1) .profilePic {
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3oj8krREQGuUW78glx1hCs5yclyHwoFFfQ&s);
+            background-size: cover;
+        }
+
+        .teamMembersContainer .team-member:nth-child(2) .profilePic {
+            background: url(boyProfile.jpg);
+            background-size: cover;
+        }
+
+        .teamMembersContainer .team-member:nth-child(3) .profilePic {
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZonR2gDJZdV_qogRzCUqeLLQnDCg7fi6HyNMSlSpcn_tPFyrNE3rGmZJuPncpIPvXh2A&usqp=CAU);
+            background-size: cover;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .team-member h4 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #934274;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1>TASTE TREASURY</h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <span class="more-info">
+                <b>1. Passionate Cooking, Simple Recipes:</b>
+                <p>
+                    "At Taste Treasure, we believe that cooking should be enjoyable, accessible, and rewarding for
+                    everyone.
+                    Our mission is to make delicious meals possible for all home cooks, whether you’re a seasoned chef
+                    or just starting in the kitchen. We curate a collection of easy-to-follow recipes, from simple
+                    weeknight dinners to fun, creative desserts. Each recipe is designed to inspire, make your cooking
+                    experience stress-free, and bring joy to your table. With us, you'll discover that cooking can be as
+                    fun as it is delicious!"
+                </p>
+                <b>2. Inspiring Food Lovers Everywhere:</b>
+                <p>
+                    "Recipe Hub is a place where food lovers come together to explore, share, and create delicious
+                    meals. We’re passionate about helping people discover new flavors, ingredients, and cooking
+                    techniques. Whether you’re preparing a quick weeknight dinner, planning a special celebration, or
+                    experimenting with new ingredients, we have something for every occasion. Our goal is simple – to
+                    inspire and empower you to cook great meals at home. With easy-to-follow recipes and helpful tips,
+                    we hope to make your cooking journey enjoyable and rewarding."
+                </p>
+                <b>3. A Global Taste for Every Home Cook:</b>
+                <p>
+                    "At Recipe Hub, we believe that food has the power to bring people together. Our platform is
+                    dedicated to offering a diverse collection of recipes from all around the world, helping you explore
+                    new cuisines and flavors from the comfort of your own kitchen. Whether you’re cooking for one,
+                    feeding a family, or hosting a gathering, we have recipes that suit every occasion. We aim to make
+                    cooking approachable, fun, and exciting, all while keeping things simple and using ingredients you
+                    can easily find. Join us as we create tasty dishes that everyone can enjoy!"
+                </p>
+                <b>4. Bringing Joy to the Kitchen:</b>
+                <p>
+                    "Welcome to Recipe Hub, where our mission is to make cooking a fun and creative experience for
+                    everyone. We understand that everyone has a different cooking style, so we offer a wide variety of
+                    recipes that cater to all tastes, from healthy meals to indulgent treats. Our goal is to inspire you
+                    with fresh ideas, making it easy to cook great food even on your busiest days. Whether you’re an
+                    experienced chef or a beginner, we’re here to guide you every step of the way and help you bring joy
+                    to your kitchen."
+                </p>
+                <b>5. For Food Lovers, By Food Lovers:</b>
+                <p>
+                    "At Recipe Hub, we’re a team of food enthusiasts who want to share our love for cooking with the
+                    world. Our site is filled with tried-and-tested recipes that anyone can make, from beginners to
+                    experienced cooks. We believe that great food doesn’t have to be complicated, which is why we focus
+                    on simple, yet delicious recipes that bring out the best in every dish. Whether you’re looking for
+                    family-friendly meals, healthy options, or something new to try, we have something to suit your
+                    needs. Join us and discover the joy of cooking at home!"
+                </p>
+            </span>
+
+            <div class="team-info">
+                <h3>Meet Our Team</h3>
+                <div class="teamMembersContainer">
+                    <div class="team-member">
+                        <div class="profilePic"></div>
+
+                        <h4> </h4>
+                        <p></p>
+                    </div>
+                    <div class="team-member">
+                        <div class="profilePic"></div>
+
+                        <h4>Arkit Sharma</h4>
+                        <p></p>
+                    </div>
+                    <div class="team-member">
+                        <div class="profilePic"></div>
+
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="more-info-btn">Click for More Info</button>
+            <span class="more-info pre2" style="display:none;">
+                <b>
+                    1. Simple and Friendly:
+                </b>
+                <p>
+                    "Welcome to Recipe Hub! We are a team of food enthusiasts dedicated to making cooking easy, fun, and
+                    delicious. From quick weeknight dinners to gourmet creations, our goal is to inspire home cooks of
+                    all
+                    levels with easy-to-follow recipes that everyone will love."
+                </p>
+                <b>2. Passionate and Inspiring:</b>
+                <p>
+                    "At Recipe Hub, we believe that food is the heart of every home. Whether you’re a beginner or an
+                    experienced
+                    chef, our carefully curated recipes are here to inspire your culinary journey. Join us as we explore
+                    new
+                    flavors, celebrate timeless classics, and create meals that bring people together."
+                </p>
+                <b>3. Health-Conscious and Nutritious:</b>
+                <p>
+                    "At Recipe Hub, we are passionate about making healthy eating accessible and delicious. Our recipes
+                    focus on
+                    fresh ingredients, balanced nutrition, and simple preparations. Whether you're looking for a quick
+                    meal
+                    or
+                    planning a special occasion, we’ve got you covered with nutritious and flavorful options for every
+                    diet."
+                </p>
+
+                <b>4. For Food Lovers:</b>
+                <p>
+                    "Recipe Hub is a place where food lovers come together to explore, share, and create. With hundreds
+                    of
+                    recipes from all around the world, we’re here to bring diversity to your kitchen, one dish at a
+                    time.
+                    Whether it’s comfort food, seasonal recipes, or vegan delights, you’ll find something to satisfy
+                    every
+                    craving."
+                </p>
+                <b>5. Welcoming and Community-Focused:</b>
+                <p>
+                    "Here at Recipe Hub, we believe in the power of food to bring people together. Our community-driven
+                    platform
+                    is all about sharing delicious, easy-to-make recipes that everyone can enjoy. From our kitchen to
+                    yours,
+                    we
+                    aim to make cooking fun and accessible for home chefs of all backgrounds."
+                </p>
+                <b>6. Creative and Trendy:</b>
+                <p>
+                    "Recipe Hub is your go-to destination for modern, creative recipes that fit today’s busy lifestyle.
+                    Whether
+                    you're into quick meals, meal prep, or experimenting with the latest food trends, we’ve got tons of
+                    ideas to
+                    help you stay inspired and keep your kitchen exciting!"
+                </p>
+            </span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Taste Treasure . All Rights Reserved .</p>
+    </footer>
+    <script>
+        document.getElementById('more-info-btn').addEventListener('click', function () {
+            // Select the second .more-info element (index 1)
+            const info = document.querySelectorAll('.more-info')[1];
+
+            // Toggle the display property between 'none' and 'block'
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'flex';
+            } else {
+                info.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
