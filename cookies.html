@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<style>
+     .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
+    img{
+        height: 250px;
+        }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+        font-size: large;
+        font-weight: 700;
+        
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        margin-top: 80px;
+    }
+    ol {
+        color: rgb(0, 0, 0);
+        font-weight: 400; 
+        font-size: 18px;
+    }
+    ul{
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Cookies:</h1>
+            <p id="describe">A cookie , or a biscuit , is a baked or cooked snack or dessert that is typically small, flat and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. It may include other ingredients such as raisins, oats, chocolate chips, nuts, etc.Unlike other desserts, cookies do not require additional utensils or tableware. Simply pick up and enjoy. Whether you're tossing a couple in with your lunch or feeding an entire congregation, cookies provide a convenient and favorable treat for any occasion. Plus, you can always bring the leftovers home for later!
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <Li>Wheat flour:100 g</Li>
+            <Li>Varagu flour:50 g</Li>
+            <Li>Sugar:100 g</Li>
+            <Li>Raisins:50 g</Li>
+            <li>Egg:40 g</li>
+            <li>Baking powder: A Pinch </li>
+           <li> Vanilla powder: 2 Drops</li>
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>Preheat oven to 1900C.</li>
+    <LiIn a separate bowl, whisk together both the flours, baking powder and eggLi>
+    <Li>Beat butter until smooth and creamy in a bowl</Li>
+    <Li>Add the flour mixture to the batter and mix thoroughly. Add enough milk to make a soft batter. Then add the rai-sins and beat until combined</Li>
+
+<li>For each cookie, drop about one table-spoon of batter onto the prepared bak-ing sheet, spacing the cookies about 2 inches apart. Bake the cookies for about 15 to 20 minutes.</li>
+<li>Remove from oven and transfer the cookies onto a wire rack to cool</li>
+</ul>
+
+            </div>
+            <div>
+        <img src="cookies.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+                
+                const commentItem = document.createElement('li');
+                commentItem.textContent = newComment;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function () {
+                    commentList.removeChild(commentItem);
+                });
+
+                commentItem.appendChild(deleteButton);
+
+                
+                commentList.appendChild(commentItem);
+
+               
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>
