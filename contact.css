@@ -1,0 +1,153 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #000000);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Home link (luxurious gold accent) */
+header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.home-link {
+  background-color: #333;
+  color: gold;
+  padding: 16px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid gold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-link:hover {
+  background-color: #ff3b30;
+  border-color: #ff3b30;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Form container with glassmorphism */
+.form-container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Sexy title with gold and elegant font */
+h1 {
+  font-size: 3rem;
+  color: #ffd700;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeInText 1.5s ease-out;
+}
+
+/* Form styling with neumorphism effects */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input, form textarea {
+  padding: 18px;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #b1b1b1;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
+}
+
+form button {
+  padding: 18px;
+  font-size: 20px;
+  background: linear-gradient(135deg, #ff3b30, #ff8e00);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #ff6b81, #ff3b30);
+  transform: scale(1.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer with subtle gold */
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #ffd700;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeInText 2s ease-out;
+}
+
+/* Fade in animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
