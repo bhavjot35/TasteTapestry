@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+
+
+.navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+   
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(0, 0, 0);
+    
+   
+
+}
+#logo_img{
+    width: 25vw;
+    margin-top: 5px;
+}
+#navlogo{
+    font-size:small;
+    color:rgb(237, 228, 228);
+}
+#navitems{
+    display: flex;
+    gap:40px;
+    color: white;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+     text-decoration: none;
+}
+
+
+
+
+    
+
+.sidebar{
+    
+    width: 174px;
+    background: hsla(211, 66%, 87%, 1);
+background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+transition:  .1s;
+position: fixed;
+top: 0;
+height: 100%;
+z-index: 9999; 
+}
+.sidebar header{
+    font-size: 22px;
+    color:rgb(0, 0, 0);
+    text-align:center;
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    user-select: none;
+    
+
+   
+}
+
+    .sidebar ul a {
+        text-align: center;
+    display:-webkit-box;
+    user-select: none;
+        font-family: monospace;
+    width:100%;
+    line-height:20px;
+    font-size: 21px;
+    color: rgb(7, 6, 6);
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(255,255,255,);
+    /* border-bottom:1px solid black; */
+    transition:.1s;
+
+   
+}
+#trans li:hover a {
+    padding-left:9px
+}
+.sidebar a i{
+    margin-right: 16px;
+    
+    }
+
+
+.image_align {
+    display: flex;
+    
+   
+    border: 1px solid black;
+    
+}
+
+
+
+
+.image-container  {
+  padding: 30px;
+    
+ 
+}
+
+
+.sid_img{
+    display: flex;
+    
+    
+    
+}
+.image_align{
+    display: flex;
+    flex-direction: column;
+    background-image:url(imgbaack.avif);
+    background-repeat: no-repeat;
+background-size: 100%;
+
+    
+}
+.align2{
+    display: flex; 
+    margin-left: 186px;
+    justify-content: space-evenly;
+
+}
+.imgname{
+    text-align: center;
+    font-size: larger;
+   font-weight: 600;
+}
+.sidebar{
+
+    top:50px
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.header1{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#trans{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    background-image:url(imgbaack.avif);
+
+    
+}
+/*here overlay*/
+#trans li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(90vh / 5);
+    border-bottom: 2px dotted black;
+    width: 174px;
+}
+
+.image-container {
+    position: relative;
+}
+.image-container a{
+    display: block;
+    width: 215px;
+    height: 150px;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    transition: all 0.4s ease-in-out;
+}
+.image-container:hover img {
+    width: 110%;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height:150px ;
+    width: 215px;
+    
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    padding: 20px; 
+}
+
+.image-container:hover .overlay {
+    opacity: 0.7;
+}
+
+.overlay-text {
+    color: rgb(255, 255, 255);
+    font-size: 10PX;
+    font-weight: 400;
+}
+.overlay-text:HOVER{
+    color: rgb(0, 242, 255);
+}
+
+
+/*search bar*/
+/* Add this CSS to your main.css file */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.search-bar input {
+    width: 200px; /* Adjust the width as needed */
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #000000; /* Adjust the color as needed */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-bar button:hover {
+    background: blueviolet;
+}
+
+
