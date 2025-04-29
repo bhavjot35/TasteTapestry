@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot-Dog</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    .section{
+       
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    .section img{
+        height: 250px;
+       
+    }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+    }
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Hot-Dog:</h1>
+            <p id="descibe">Officially, hot dogs are wieners or frankfurters, which are sold and eaten in a bun. Hot dogs were first seen in the late 1800s, at baseball games in the United States, at which vendors decided to use bread, instead of the ‘gloves‘ that had been used previously, to hold the hot sausages while eating. Frankfurters were often called ‘dachshund’ or ‘little dog’ sausages by German vendors. Although there is not total agreement on the origin of the name ‘hot dog,’ one version is that a New York Journal sports cartoonist, Tad Dorgan, was not sure how to spell ‘dachshund’ in a cartoon he was drawing, so he simply wrote ‘hot dog!’
+
+                
+            
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <Li>Spices for flavour, such as pepper, garlic, coriander, cinnamon, cumin, nutmeg, paprika, and allspice</Li>
+            <Li>Meat stock is used to intensify meat flavours</Li>
+            <Li>Yeast extract for savoriness</Li>
+            <Li>Sodium nitrite to curing and preserve the meat</Li>
+            <li>Sugar or corn syrup to promote browning</li>
+            <li>Cherry powder for colour</li>
+           <li>Modified food starch to thicken the filling</li>
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>To create a smooth emulsion, meat trimmings are first ground into a thick paste through a big grinder. They are then transferred to a big mixer. They are combined with other ingredients such as salt, spices, binders, curing agents like nitrites, and other ingredients.</li>
+    <Li>The mixture is injected into a casing-flowing automatic stuffer/linker machine. Hot dogs are wrapped in cellulose casings, which are then removed. Some hot dog wieners also come with natural casings, which are still apparent after eating.</Li>
+    <Li>Hot dogs are thoroughly cooked in the smokehouse under strict temperature and humidity controls after filling the casings and joining them into long strands. They could be smoked on hardwood to add flavour and colour.</Li>
+    <Li>Hot dogs are rinsed in cool water after the smoke and cook cycle. Hot dogs are transferred to an automatic peeler if they are manufactured with cellulose casings, where the cellulose's outer layer is peeled off.</Li>
+   
+</ul>
+
+            </div>
+            <div>
+        <img src="Hot_dog.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+                
+                const commentBox = document.createElement('div');
+                commentBox.classList.add('comment-box');
+                commentBox.textContent = newComment;
+
+                
+                commentList.appendChild(commentBox);
+
+                
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>
