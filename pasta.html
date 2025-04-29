@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    .section img{
+        height: 250px;
+       
+    }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+    }
+
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+
+                        <a href="contact.html">Contact</a>
+
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Pasta:</h1>
+            <p id="descibe">pasta, any of several starchy food preparations frequently associated with Italian cuisine and made from semolina, the granular product obtained from the endosperm of a type of wheat called durum, and containing a large proportion of gluten (elastic protein). It is formed into ribbons, cords, tubes, and various special shapes, all originally developed for specific characteristics, such as ability to retain heat or hold sauces Pastas are also cooked in soups and are used in casseroles and other dishes that call for the use of noodles, a similar starch preparation (see noodle). Uncooked pastas retain their freshness from three to six months
+
+
+
+
+
+                
+            
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <Li>Macaroni Pasta</Li>
+            <Li>Vegetables</Li>
+            <Li>Spices & Herbs</Li>
+            <Li>Sauce</Li>
+            
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>On a clean surface, pile the flour and make a well in the center.
+    </li>
+    <li>Add the eggs and salt into the well.
+    </li>
+    <li>Using a fork, gently beat the eggs, gradually incorporating the flour from the edges until combined.</li>
+    <li>Bring the dough together with your hands and knead it for about 8-10 minutes until smooth and elastic.
+    </li>
+    <li>If the dough is sticky, sprinkle a little more flour as needed</li>
+    <Li>Wrap the dough in plastic wrap or cover with a damp cloth.
+    </Li>
+    <Li>Let it rest for at least 30 minutes at room temperature.</Li>
+    <Li>Divide the dough into smaller portions for easier handling.
+    </Li>
+    <li>Roll out each portion with a rolling pin or a pasta machine to your desired thickness (about 1/16 inch for thin pasta).</li>
+    <li>Use a knife or pasta cutter to cut the rolled dough into your preferred shape (fettuccine, tagliatelle, etc.).</li>
+    <li>Dust with flour to prevent sticking.</li>
+    <li>Bring a large pot of salted water to a boil.
+    </li>
+    <li>Add the pasta and cook for 2-4 minutes (fresh pasta cooks quickly).
+        Taste for doneness, then drain</li>
+    <li>Toss the pasta with your favorite sauce or toppings.</li>
+</ul>
+
+            </div>
+            <div>
+        <img src="pasta.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+                
+                const commentItem = document.createElement('li');
+                commentItem.textContent = newComment;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function () {
+                    commentList.removeChild(commentItem);
+                });
+
+                commentItem.appendChild(deleteButton);
+
+                
+                commentList.appendChild(commentItem);
+
+                
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>
