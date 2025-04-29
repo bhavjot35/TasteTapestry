@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake</title>
+</head>
+<style>
+    .navcontainer{
+    
+    background: hsla(211, 66%, 87%, 1);
+
+    background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+    height: 50px;
+    
+}
+#navlist{
+    
+    margin-left:5px;
+    margin-right:10px;
+    list-style: none;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 78px;
+    color: black;
+
+    
+   
+
+}
+#navlogo{
+    font-size:small;
+    color:rgb(0, 0, 0);
+}
+#navitems{
+    display: flex;
+    gap:10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+body{
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(imgbaack.avif);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        
+    }
+    .section{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
+    img{
+        height: 250px;
+        }
+    .section h1{
+        margin:0;
+        color: rgb(0, 0, 0);
+    }
+    #describe{
+        color: rgb(0, 0, 0);
+        font-size: large;
+        font-weight: 700;
+        
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        margin-top: 80px;
+    }
+    ol {
+        color: rgb(0, 0, 0);
+        font-weight: 400; 
+        font-size: 18px;
+    }
+    ul{
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .comment-box {
+            border: 1px solid #4f4e4e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #comment-form{
+            color: rgb(0, 0, 0);
+        }
+
+</style>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <p id="navlist">Recipe Sharing Platform</p>
+                </li>
+                <li>
+                    <div id="navitems">
+                        <a href="main.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="text">
+            <h1>Cupcake:</h1>
+            <p id="descibe">A cupcake is a small, sweet baked good topped with frosting. You might bake cupcakes for your best friend's birthday When you make cupcakes, you mix up cake batter and instead of baking it in large pans, pour it into the small, paper-lined indentations in a cupcake or muffin pan. Some people prefer cupcakes to cakes, because they're the perfect serving size. In Britain and Australia, cupcakes are called "fairy cakes." Cupcake is an American English word dating from the 19th century..Cupcakes are much easier to bake than cakes. They take about 15-20 minutes to bake compared to 35-40 minutes for a cake and it almost tastes the same as a cake from basic to assorted cupcakes, they have all been in trend for a very long time.
+
+                
+            
+        
+            
+                <h2>Ingredients</h2>
+        <ol>
+            <Li>110g softened butter</Li>
+            <Li>110g golden caster sugar</Li>
+            <Li>2 large eggs</Li>
+            <Li>½ tsp vanilla extract</Li>
+            <li>110g self-raising flour</li>
+            <li> 150g softened butter</li>
+           <li> 3 tbsp milk</li>
+        </ol>
+        
+<h2>Procedure:</h2>
+<ul>
+    <li>Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases.</li>
+    <Li>Using an electric whisk beat 110g softened butter and 110g golden caster sugar together until pale and fluffy then whisk in 2 large eggs, one at a time, scraping down the sides of the bowl after each addition</Li>
+    <Li>Add ½ tsp vanilla extract, 110g self-raising flour and a pinch of salt, whisk until just combined then spoon the mixture into the cupcake cases.</Li>
+    <Li>Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. Leave to cool completely on a wire rack.</Li>
+    <li>To make the buttercream, whisk 150g softened butter until super soft then add 300g icing sugar, 1 tsp vanilla extract and a pinch of salt.</li>
+    <li>Whisk together until smooth (start off slowly to avoid an icing sugar cloud) then beat in 3 tbsp milk</li>
+    <li>If wanting to colour, stir in the food colouring now. Spoon or pipe onto the cooled cupcakes.</li>
+</ul>
+
+            </div>
+            <div>
+        <img src="cupcake.jpg" >
+        <form id="comment-form">
+            <label for="comment-input">Add a comment:</label>
+            <input type="text" id="comment-input" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comment-section">
+            <h2>Comments</h2>
+            <ul id="comment-list">
+        </div>
+        
+       
+    </p>
+    </div>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.getElementById('comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                
+                const newComment = commentInput.value;
+
+                
+                const commentItem = document.createElement('li');
+                commentItem.textContent = newComment;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function () {
+                    commentList.removeChild(commentItem);
+                });
+
+                commentItem.appendChild(deleteButton);
+
+                
+                commentList.appendChild(commentItem);
+
+              
+                commentInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>
